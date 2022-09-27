@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <centre>
+    <div id="box">
+        <h2>Great TIP and SHARE calculator</h2><hr>
+    
+    Enter bill amount:<br>
+    ₹<input id="amount" type="number"><br><br>
+    Choose percent of tip:<br>
+    <input id="tip" type ="number">%<br><br>
+      How many people share the bill:<br>
+      <input id="people" type ="number"><br><br>
+      <button id="button" onclick='compute()'>Calculate!</button><hr>
+<div id="result">
+      <span id="totalamount"></span><br>
+      <span id="eachshare"></span>
+     <h6> <b><span  id="image"></span></b></div></h6>
+</div>
+</centre>
+</body>
+<script>
+               
+    function compute(){
+        var amount = document.getElementById('amount').value;
+        amount =parseInt(amount);
+        var tip = document.getElementById('tip').value;
+        parseInt(tip);
+        var people = document.getElementById('people').value;
+        var x = (tip*amount)/100;
+        x = parseInt(x);
+        var total = amount+x;
+        var person = total/people;
+        document.getElementById('totalamount').innerText ="amount to be paid is :  ₹"+ total;
+        document.getElementById('eachshare').innerText = "amount per person is:  ₹"+ person;
+document.getElementById('image').innerText ="HOPE YOU ENJOYED THE MEAL";
+
+
+    }
+
+</script>
+</html>

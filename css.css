@@ -1,0 +1,30 @@
+body{
+    background-image: url(download.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+#box{
+    text-align: left;
+    height: 500px;
+    width: 200px;
+  margin: 0 auto;
+  background-color: white;
+  text-indent: 30px;
+  text-align: justify;
+  letter-spacing: 1px;
+  color: rgb(0, 0, 255);
+ border-style: double;
+border-color: rgb(255, 0, 0);
+border-width: 7px;
+
+}
+h2{
+    text-align: center;
+}
+#result{
+    text-align: center;
+   font-size: 15px;
+   
+
+}
